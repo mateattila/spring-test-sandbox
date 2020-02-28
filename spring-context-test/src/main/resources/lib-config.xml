@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="commonService" class="spring.context.test.library.CommonServiceImpl">  
+    <bean id="commonService" name="service" class="spring.context.test.library.CommonServiceImpl">  
         <property name="message" value="Hello!" />
     </bean>
 

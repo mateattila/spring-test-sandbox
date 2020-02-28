@@ -27,7 +27,7 @@ class ConfigTest {
   @Test
   void testApplicationXML_FIXME() {
     ApplicationContext context = new ClassPathXmlApplicationContext("classpath:/app-config.xml");
-    CommonService commonService = context.getBean("commonService", CommonService.class);
+    CommonService commonService = context.getBean("service", CommonService.class);
     assertEquals("Overridden: Message: Hello!", commonService.service());
   }
 

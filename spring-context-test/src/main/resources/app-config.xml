@@ -6,8 +6,9 @@
 
 	<import resource="classpath:/lib-config.xml"/>
 
-	<bean id="commonService" 
-		class="spring.context.test.application.OverriddenServiceImpl">  
+	<bean id="commonService2" name="service" 
+		class="spring.context.test.application.OverriddenServiceImpl"
+		parent="commonService">  
     </bean>
 
 <!-- 	<bean id="commonService2"  -->
